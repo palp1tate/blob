@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+
+{{/*<span class="main">这是index页面</span>*/}}
+
+{{/*{{.Website}}*/}}
+{{/*{{.Email}}*/}}
+
+<br>--------------------------结构体渲染<br>
+{{.user.Id}}
+{{.user.Name}}
+{{.user.Age}}
+
+<br>--------------------------数组渲染<br>
+
+{{range $k,$v := .arr }}
+    {{$k}}
+    {{$v}}
+    <br>
+{{end}}
+
+<br>
+{{range .arr}}
+    {{.}}
+{{end}}
+
+<br>--------------------------结构体数组渲染<br>
+
+{{range .users}}
+    {{.Id}}
+    {{.Name}}
+    {{.Age}}
+    <br>
+{{end}}
+
+<br>--------------------------map渲染<br>
+
+{{.map_data.name}}
+{{.map_data.age}}
+
+<br>--------------------------map+结构体渲染<br>
+
+{{.map_struct.user1}}
+{{.map_struct.user2.Name}}
+
+<br>--------------------------切片渲染<br>
+
+{{range .slice}}
+    {{.}}
+{{end}}
+</body>
+</html>

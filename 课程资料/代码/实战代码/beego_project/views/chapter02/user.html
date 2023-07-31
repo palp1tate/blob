@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="/static/js/jquery.min.js"></script>
+</head>
+<body>
+
+这是我的第一个controller <br>
+
+参数为：{{.id}}
+
+{{/*<form action="/add_user" method="post">*/}}
+    {{/*用户名：<input type="text" name="user_name"><br>*/}}
+    {{/*密码：<input type="password" name="password"><br>*/}}
+    {{/*<input type="submit" value="提交">*/}}
+{{/*</form>*/}}
+
+<form>
+    用户名：<input type="text" id="user_name"><br>
+    密码：<input type="password" id="password"><br>
+    <input type="button" value="提交" id="add_student">
+</form>
+
+
+<script>
+    var add_student = document.getElementById("add_student");
+    add_student.onclick = function (ev) {
+        var user_name = document.getElementById("user_name").value;
+        var password = document.getElementById("password").value;
+
+        $.ajax({
+            url:"/add_user_ajax",
+            type:"POST",
+            data:{
+                "user_name":user_name,
+                "password":password
+            },
+            success:function (data) {
+                if(data["code"] == 200){
+                    alert(data["msg"])
+
+                }else {
+                    alert("添加失败")
+                }
+            },
+            fail:function (data) {
+
+            }
+        })
+
+    }
+</script>
+</body>
+</html>

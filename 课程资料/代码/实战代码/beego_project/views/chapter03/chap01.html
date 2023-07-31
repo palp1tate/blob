@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+chap01页面 <br>
+
+
+------------------ 基本语法 <br>
+{{.name}} <br>
+
+{{range $i,$v := .arr}}
+    {{$v}}
+    {{$.name}}
+{{end}}
+
+
+<br>-----------------常用语法<br>
+
+{{"zhiliao"}} {{"hallen"}} <br>
+
+
+{{ `<td></td>`}} <br>
+
+{{'a'}} <br>
+{{print nil}} <br>
+
+<br>-----------------range  支持else<br>
+
+{{range .arr}}
+    {{.}}
+{{else}}
+      暂无数据
+{{end}}
+
+<br>-----------------if<br>
+{{/*18 > 19*/}}
+{{if gt 18 19}}
+    18大于19
+{{else}}
+    18小于19
+{{end}}
+
+<br>
+{{if gt 19 18}}
+19大于18
+{{end}}
+
+<br>
+<br>-----------------template<br>
+{{template "chapter03/tmp_test.html" .}}
+</body>
+</html>

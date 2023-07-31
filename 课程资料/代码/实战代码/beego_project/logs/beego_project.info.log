@@ -1,0 +1,2 @@
+2020/12/15 11:39:50.876 [I] [asm_amd64.s:1357]  http server Running on http://:8080
+2020/12/15 11:39:55.616 [I] [router.go:877]  这是Info日志

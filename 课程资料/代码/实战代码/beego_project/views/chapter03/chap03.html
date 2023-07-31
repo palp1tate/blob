@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+chap03页面 <br>
+
+<br> ---------------------date <br>
+{{.date}} <br>
+{{date .date "Y-m-d H:i:s"}}
+
+<br> ---------------------compare <br>
+
+
+{{compare 97 98}} <br>
+{{compare 'a' 97}} <br>
+<br> ---------------------substr <br>
+
+{{substr "的亲吻全额恶趣味驱蚊器而清热润肺" 0 5}}
+
+<br> ---------------------map_get <br>
+
+{{map_get .map_data "name"}} <br>
+{{index .map_data "name"}}
+<br> ---------------------url_for <br>
+
+{{urlfor "Chap03Controller.Get"}}
+
+{{/*<a href="{{urlfor ""}}">登录</a>*/}}
+</body>
+</html>

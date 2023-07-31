@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人博客</title>
+<link href="css/base.css" rel="stylesheet">
+<link rel="icon" href="./images/zlkt.ico" type="image/x-icon"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<script src="js/jquery.js"></script>
+<script src="js/nav.js"></script>
+</head>
+<body>
+<header>
+ <nav>
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="#">python</a></li>
+      <li><a href="#">golang</a></li>
+      <li><a href="#">java</a></li>
+      <li><a href="#">c++</a></li>
+      <li><a href="#">关于博主</a></li>
+    </ul>
+  </nav>
+</header>
+<!--header end-->
+<main>
+  <article>
+    
+    <!--new_blog 最新文章 begin-->
+    <div class="new_blog">
+      <ul class="blogs">
+        <li>
+          <a href="info.html" target="_blank">
+            <i><img src="images/beego课程图片.jpg" alt="标题图片"></i>
+            <h2>beego从入门到放弃</h2>
+          </a>
+          <p class="blog_smalltext">
+            帖子描述
+          </p>
+          <p class="blog_info">
+            <span>2020-04-02</span>
+            <span>作者</span>
+            <span>
+              <!-- 分类 -->
+              <a href="info.html" target="_blank">golang</a>
+            </span>
+            <!-- 阅读量 -->
+            <span>100</span>
+            <!-- 点赞数 -->
+            <span>59</span>
+          </p>
+        </li>
+
+        <li>
+          <a href="info.html" target="_blank">
+            <i><img src="images/gin课程图片.jpg" alt="标题图片"></i>
+            <h2>gin从入门到精通</h2>
+          </a>
+          <p class="blog_smalltext">
+            帖子描述
+          </p>
+          <p class="blog_info">
+            <span>2020-04-02</span>
+            <span>作者</span>
+            <span>
+              <!-- 分类 -->
+              <a href="info.html" target="_blank">golang</a>
+            </span>
+            <!-- 阅读量 -->
+            <span>100</span>
+            <!-- 点赞数 -->
+            <span>59</span>
+          </p>
+        </li>
+
+      </ul>
+    </div>
+    <!--new_blog 最新文章 end--> 
+    
+  </article>
+  <!--article end-->
+  
+  <aside>
+    <div class="search">
+      <form action="">
+        <input name="keyboard" id="keyboard" class="input_text" value="请输入关键字词" style="color: rgb(153, 153, 153);" onfocus="if(value=='请输入关键字词'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='请输入关键字词'}" type="text">
+        <input name="show" value="title" type="hidden">
+        <input name="tempid" value="1" type="hidden">
+        <input name="tbname" value="news" type="hidden">
+        <input name="Submit" class="input_submit" value="搜索" type="submit">
+      </form>
+    </div>
+    
+    <div class="paihang">
+      <h2 class="aside_title">热门帖子</h2>
+      <ol start="1">
+        <li>
+          <a href="/" target="_blank">
+            每个人的生命里都一定会有这么一个人，他告诉我们什么是爱
+          </a>
+        </li>
+      </ol>
+    </div>
+    <div class="links">
+      <h2 class="aside_title">友情链接</h2>
+      <ul>
+        <li><a href="http://zlkt.net" target="_blank">知了课堂</a></li>
+        <li><a href="https://www.baidu.com/" target="_blank">百度</a></li>
+      </ul>
+    </div>
+  </aside>
+  <!--aside end--> 
+</main>
+<footer>
+  <p> © 2017-2020 版权所有</p>
+</footer>
+<!--footer end-->
+
+</body>
+</html>
