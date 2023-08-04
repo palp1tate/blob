@@ -4,6 +4,8 @@
 
 本项目来源于知了传课：<https://www.bilibili.com/video/BV1YV411b7JJ/?spm_id_from=333.999.0.0&vd_source=84fc27804252448ba51ef3b6abfd5d36>
 
+课程资料和源码均已上传Github。
+
 笔者对源代码有不少修改,比如代码的优化更新。通过学习这个项目，你可以对用beego进行全栈开发有一定了解。
 
 后台由管理员登录，主要负责上传修改删除帖子。
