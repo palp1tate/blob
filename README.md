@@ -14,21 +14,21 @@
 
 主要功能如下：
 
-![image](https://github.com/uestc-wxy/blob/assets/120303802/d04b4a62-8ed7-4afd-90f9-954065fc639b)
+![image](https://github.com/palp1tate/blob/assets/120303802/d04b4a62-8ed7-4afd-90f9-954065fc639b)
 
-![image](https://github.com/uestc-wxy/blob/assets/120303802/da6fd30a-7334-4956-8e08-186f7d135d83)
+![image](https://github.com/palp1tate/blob/assets/120303802/da6fd30a-7334-4956-8e08-186f7d135d83)
 
-![image](https://github.com/uestc-wxy/blob/assets/120303802/1773ad4e-64d4-4577-b8be-e7403b96c6fe)
+![image](https://github.com/palp1tate/blob/assets/120303802/1773ad4e-64d4-4577-b8be-e7403b96c6fe)
 
-![image](https://github.com/uestc-wxy/blob/assets/120303802/e2e4192f-dc50-441a-98e1-69f8f5c7c056)
+![image](https://github.com/palp1tate/blob/assets/120303802/e2e4192f-dc50-441a-98e1-69f8f5c7c056)
 
-![image](https://github.com/uestc-wxy/blob/assets/120303802/8d2176a5-dfbe-4e46-9a6a-29054986eaef)
+![image](https://github.com/palp1tate/blob/assets/120303802/8d2176a5-dfbe-4e46-9a6a-29054986eaef)
 
 ## 关于使用
 
 克隆仓库到本地：
 ```bash
-git clone https://github.com/uestc-wxy/blob.git
+git clone https://github.com/palp1tate/blob.git
 ```
 
 配置`mysql.conf`文件：
